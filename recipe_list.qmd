@@ -1,0 +1,9 @@
+---
+title: "Sara Z's Favorite Dessert Recipes"
+listing: 
+  contents: recipes
+  type: grid
+  sort: 
+    - "date desc"
+    - "title"
+---

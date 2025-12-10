@@ -1,0 +1,146 @@
+---
+title: "Vanilla Souffle with Lemon Curd"
+date: 11-21-2025 
+date-modified: last-modified
+format: 
+  html:
+    date-format: long
+---
+
+![](images/p1_vanilla_souffle.jpg)
+
+```{r}
+#| label: load-packages
+#| include: false
+
+library(tibble)
+library(gt)
+source("utility_functions.R")
+```
+
+
+## Ingredients 
+
+:::{.panel-tabset}
+### **Vanilla Souffles (amount: four 8oz ramekins)**
+
+```{r}
+#| label: souffle-recipe
+#| echo: false
+
+souffle_ingredients <- c(
+  "1. large eggs (50g each without shell)" = "4",
+  "2. sugar for egg yolk" = "15 g",
+  "3. vanilla extract" = "15 ml",
+  "4. cake flour" = "25 g",
+  "5. milk" = "200 ml",
+  "6. unsalted butter" = "35 g",
+  "7. sugar for egg white" = "40 g",
+  "8. powder sugar" = "1 Tbsp"
+)
+
+make_ingredient_tab(souffle_ingredients) |> 
+  tab_footnote(
+    footnote = "Original recipe uses 4g of vanilla bean paste and it's equivalent to 1 Tbsp of vanilla extract according to websearch.",
+    locations = cells_body(columns = Quantity, rows = 3)
+    ) |> 
+  tab_footnote(
+    footnote = "Can use 3g corn starch plus 22g all purpose flour as the cake flour substitute.",
+    locations = cells_body(columns = Quantity, rows = 4)
+    ) |> 
+  tab_footnote(
+    footnote = "Original recipe uses 55g of sugar for egg white, reduce to 40g since enjoying the souffle with some lemon curd.",
+    locations = cells_body(columns = Quantity, rows = 7)
+  ) |>
+  tab_style(
+    style = cell_fill(color = "#FFD580"), 
+    locations = cells_body(columns = Quantity, rows = c(3, 4, 7))
+  ) 
+```
+
+
+### **Lemon Curd (amount: ~120 ml)**
+
+```{r}
+#| label: curd-recipe
+#| echo: false
+
+curd_ingredients <- c(
+  "1. large eggs (50g each without shell)" = "1",
+  "2. lemon zest" = "1 lemon",
+  "3. lemon juice (freshly squeezed)" = "40 g",
+  "4. butter (unsalted/lightly salted)" = "18 g",
+  "5. sugar" = "28 g",
+  "6. sea salt (fine)" = "1/24 tsp"
+)
+
+make_ingredient_tab(curd_ingredients) |> 
+  tab_footnote(
+    footnote = "Original recipe uses 6 eggs, 6-8 lemons, 240g lemon juice, 113g unsalted butter, 200g sugar, and 1/4 tsp fine sea salt.",
+    locations = cells_column_labels(columns = Quantity)
+    ) |> 
+  tab_style(
+    style = cell_fill(color = "#FFD580"), 
+    locations = cells_body(columns = Quantity)
+  ) 
+```
+
+:::
+
+
+## High-level How To
+
+::: {.panel-tabset}
+
+### **Souffle** 
+1. Grease ramekins with butter and coat with sugar.
+2. Whisk the egg yolks with the sugar.
+3. Sift in the flour to step 2, mix well.
+4. Warm up the milk and butter to ~40C and pour in 20 ml to step 3, mix well.
+5. Add the rest of the milk, cook on ***low heat*** and mix constantly until 
+thicken to paste.
+6. Transfer to a bowl, add the vanilla extract, mix well.
+7. Cover the custard with a plastic wrap and cool to room temperature. 
+8. Whisk the egg white with a hand mixer and add sugar 1/3 at a time, until soft peaks.
+9. Fold in the meringue to the custard 1/3 at a time with a whisk and a spatula.
+10. Divide the batter among the ramekins. 
+11. Bake at 400F for about 15mins until the top is brown.
+12. Dust with powdered sugar immediately after taking out.
+
+
+### **Lemon Curd**
+1. Rub sugar and lemon zest together in a pot until like wet sand.
+2. Add lemon juice to step 1.
+3. Whisk egg with salt, add to step 2, and mix well.
+4. Cook on ***low heat***, and mix constantly until the mix thicken to sauce.
+6. Sift mix to butter.
+
+:::
+
+
+## Sara Z's Notes/Tips:
+
+Vanilla souffle:
+
+1. To coat the ramekins with butter and sugar, first melt a small amount of butter 
+in a microwave or in some hot water. Brush the butter onto the ramekin with upward 
+strokes to help the souffle batter rise vertically when bake. Put a table spoon 
+of granulated sugar in the ramekin and rotate it until its inside is fully coated 
+with sugar. Coating the side of the ramekin with sugar provides surface for the 
+souffle batter to rise.
+2. When cooking the flour-milk mix in step 5 into paste, make sure to constantly 
+stir the mix on low heat to ensure even cooking and prevent burn. Turn off the stove
+when the mix has similar consistency as the soft peak meringue. Transfer the 
+mix into a bowl to prevent further cooking in the hot pot.
+
+
+Lemon curd:
+
+1. Zest the lemon(s), but don't cut too deep to avoid the pith, which is the white, 
+spongy part of the lemon peel that could taste bitter.
+
+
+
+## Recipe Credits:
+- Vanilla souffle recipe is from [Cooking Tree](https://en.cooking-tree.com/vanilla-souffle-recipe-2/){target="_blank"}
+- Lemon curd recipe is from [The Best Lemon Curd](https://buttermilkbysam.com/the-best-lemon-curd/){target="_blank"}

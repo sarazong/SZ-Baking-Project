@@ -1,0 +1,32 @@
+/*-- scss:defaults --*/
+// Fonts: 
+
+// font-size-base = font size of the body text
+$font-size-base:        1rem !default;
+$h1-font-size:          $font-size-base * 2 !default;
+$h2-font-size:          $font-size-base * 1.65 !default;
+$h3-font-size:          $font-size-base * 1.4 !default;
+// font-weight 400 is normal, 700 being bold
+$headings-font-weight:  700 !default;
+
+
+
+/*-- scss:rules --*/
+// Background color
+// headings background color
+h2, h3 {
+  background-color: #fadfdd;
+  padding: 4px;
+  padding-left: 10px;
+  border-radius: 5px;
+  color: #464646;
+}
+
+// Navbar
+// making the navbar and elements inside bigger
+.navbar {
+  min-height: 80px;
+  font-size: $font-size-base * 1.25;
+}
+
+

@@ -1,0 +1,40 @@
+project:
+  type: website
+  preview:
+    browser: true
+
+website:
+  title: "Sweets & Coffee/Tea"
+  navbar:
+    # tools:
+    #   - icon: github
+    #     text: "Source Code"
+    #     href:
+        
+    left:
+      - icon: house-check
+        href: index.qmd
+        text: Home
+      - icon: journals
+        href: recipe_list.qmd
+        text: Recipes
+        # menu: 
+        #   - text: "- Japanese Cheese Cake"
+        #     href: japnese_cheese_cake.qmd
+        #     
+        #   # - href: puff_pastry_egg_tart.qmd
+        #   #   text: "- Puff Pastry Egg Tart"
+        #   - text: "- Lemon Curd"
+        #     href: lemon_curd.qmd
+        #   - text: "- Vanilla Souffle"
+        #     href: vanilla_souffle.qmd
+        #     
+    
+    
+format:
+  html:
+    theme: 
+      - journal
+      - custom.scss
+    toc: true
+    from: markdown+emoji
