@@ -187,5 +187,33 @@
     "title": "Chocolate Souffle",
     "section": "Recipe Credits:",
     "text": "Recipe Credits:\n\nOriginal Recipe from New York Times"
+  },
+  {
+    "objectID": "orange_sauce.html",
+    "href": "orange_sauce.html",
+    "title": "Orange Sauce",
+    "section": "",
+    "text": "#| label: recipe\n#| echo: false\ningredients &lt;- list(\n  \"1. sugar\" = \"25 g\",\n  \"2. cornstarch\" = \"1.5 g\",\n  \"3. orange zestr\" = \"1/8 tsp\",\n  \"4. orange juice\" = \"80 g\",\n  \"5. butter\" = \"5 g\"\n)"
+  },
+  {
+    "objectID": "orange_sauce.html#step-by-step",
+    "href": "orange_sauce.html#step-by-step",
+    "title": "Orange Sauce",
+    "section": "Step by Step",
+    "text": "Step by Step"
+  },
+  {
+    "objectID": "orange_sauce.html#szzzzs-notes",
+    "href": "orange_sauce.html#szzzzs-notes",
+    "title": "Orange Sauce",
+    "section": "SZzZz’s Notes:",
+    "text": "SZzZz’s Notes:"
+  },
+  {
+    "objectID": "orange_sauce.html#recipe-credits",
+    "href": "orange_sauce.html#recipe-credits",
+    "title": "Orange Sauce",
+    "section": "Recipe Credits:",
+    "text": "Recipe Credits:\n\nOriginal Recipe from Taste of Home"
   }
 ]
